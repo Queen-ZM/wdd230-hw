@@ -31,25 +31,62 @@
      padding: 10px;
      border: 2px 0;
      background-color: #b871f2;
- }
+}
 
- .wrapper {
+.portal nav ul li a {
+    color: white;
+    border-radius: 5px;
+}
+
+a.portal,a:hover {
+    background: #009eff;
+    transition: .5s;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+button {
+    grid-column: 15/ 16;
+    background-color: #b871f2;
+    border: 2px solid #000;
+    color: white;
+    margin: 0.5s;
+    padding: 0.75rem;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    display: none;
+
+}
+
+#menuButton:hover {
+    background-color: #009eff;
+    color: purple;
+}
+
+@media (max-width: 952px){
+    .portal nav ul li a {
+        font-size: 16px;
+    }
+}
+
+.wrapper {
      margin-top: 50px;
      margin: 15px auto;
 
- }
+}
 
- img {
+img {
      max-width: 200px;
      float: left;
 
- }
+}
 
- h1 {
+h1 {
      margin-bottom: 50px;
- }
+}
 
- h3 {
+h3 {
      background-color: bisque;
      border-top-left-radius: 10px;
      border-top-right-radius: 10px;
@@ -57,39 +94,46 @@
      padding-bottom: 15px;
 
 
- }
+}
 
- nav ul li {
+nav ul li {
      margin-bottom: 25px;
      list-style-type: none;
      line-height: 20px;
      font-size: 16px;
- }
+}
 
- main {
-     border-style: dotted;
-     border-width: 1px;
-     border-radius: 10px;
-     margin-top: 25px;
+.card {
+    
+    border-width: 1px;
+    border-radius: 10px;
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
 
- }
+.card-2 {
+    
+    border-width: 1px;
+    border-radius: 10px;
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
 
- .card {
-     border-style: dotted;
-     border-width: 1px;
-     border-radius: 10px;
-     padding-bottom: 25px;
-     margin-top: 25px;
- }
+.card-3 {
+    border-width: 1px;
+    border-radius: 10px;
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
 
- footer {
-     margin: 4px;
-     margin-top: 25px;
-     padding: 4px;
-     padding-top: 50px;
-     padding-bottom: 50px;
-     border: 2px 0;
-     border-radius: 12px;
-     color: aliceblue;
-     background-color: #009eff;
- }
+footer {
+    margin: 4px;
+    margin-top: 25px;
+    padding: 4px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 2px 0;
+    border-radius: 12px;
+    color: aliceblue;
+    background-color: #009eff;
+}

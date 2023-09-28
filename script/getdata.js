@@ -16,3 +16,9 @@ if (
   }`;
   alert("This page has changed!");
 }
+
+const menuButton = document.querySelector('#menuButton');
+
+menuButton.addEventListener('click', function() {
+    toggleMenu();
+});

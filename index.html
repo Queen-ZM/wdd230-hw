@@ -78,16 +78,24 @@
         font-size: 16px;
     }
 
-    main {
+    .card {
         border-style: dotted;
         border-width: 1px;
         border-radius: 10px;
+        padding-bottom: 25px;
         margin-top: 25px;
 
     }
 
-    .card {
+    .card-2 {
         border-style: dotted;
+        border-width: 1px;
+        border-radius: 10px;
+        padding-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .card-3 {
         border-width: 1px;
         border-radius: 10px;
         padding-bottom: 25px;
@@ -121,8 +129,12 @@
         </div>
     </header>
 
+   
     <div class="portal">
         <nav>
+        <button id="menuButton">&#9776;</button>
+        <br>
+        <br>
             <ul>
                 <li>
                     <a href=""></a><a href="#">Home</a>
@@ -158,81 +170,94 @@
             </ul>
         </nav>
     </div>
+    
     <br>
     <br>
-    <h2>
-        WDD 230: Web frontend Development
-    </h2>
 
-    <hr>
+    
+        <h2>
+            WDD 230: Web frontend Development
+        </h2>
+        <br>
+        <hr>
 
     <main>
-        <br>
+        <div class="column">
+            <section class="card">
+        
 
-        <h3>
-            Learning Activity
-        </h3>
-        <nav>
-            <ul>
-                <li>
-                    <a href=""></a>Lesson 01: <a href="tittle 01">Lesson 01</a>
-                </li>
-                <li>
-                    <a href=""></a>Lesson 02: <a href="lesson02/design-principle.html"> Design Principle</a>
-                </li>
-                <li>
-                    <a href=""></a>Lesson 03: <a href="tittle 03"> Lesson 03</a>
-                </li>
-                <li>
-                    <a href=""></a>Lesson 04: <a href="tittle 04"> Lesson 04</a>
-                </li>
-                <li>
-                    <a href=""></a>Lesson 05: <a href="tittle 05"> Lesson 05</a>
-                </li>
-                <li>
-                    <a href=""></a>Lesson 06 <a href="tittle 06"> Lesson 06</a>
-                </li>
-                <li>
-                    <a href=""></a>Lesson 07: <a href="tittle 07"> Lesson 07</a>
-                </li>
-                <li>
-                    <a href=""></a>Lesson 08: <a href="tittle 08"> Lesson 08</a>
-                </li>
-                <li>
-                    <a href=""></a>Lesson 09: <a href="tittle 09"> Lesson 09</a>
-                </li>
-                <li>
-                    <a href=""></a>Lesson 10: <a href="tittle 10"> Lessson 10</a>
-                </li>
-            </ul>
-        </nav>
+                <h3>
+                   Learning Activity
+                </h3>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href=""></a>Lesson 01: <a href="tittle 01">Lesson 01</a>
+                        </li>
+                        <li>
+                            <a href=""></a>Lesson 02: <a href="lesson02/design-principle.html"> Design Principle</a>
+                        </li>
+                        <li>
+                            <a href=""></a>Lesson 03: <a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators4" >W3Schools Exercise</a><br><a href="https://codepen.io/uthando/pen/bGOKqOE">Codepen</a>
+                        </li>
+                        <li>
+                            <a href=""></a>Lesson 04: <a href="tittle 04"> Lesson 04</a>
+                        </li>
+                        <li>
+                            <a href=""></a>Lesson 05: <a href="tittle 05"> Lesson 05</a>
+                        </li>
+                        <li>
+                            <a href=""></a>Lesson 06 <a href="tittle 06"> Lesson 06</a>
+                        </li>
+                        <li>
+                            <a href=""></a>Lesson 07: <a href="tittle 07"> Lesson 07</a>
+                        </li>
+                        <li>
+                            <a href=""></a>Lesson 08: <a href="tittle 08"> Lesson 08</a>
+                        </li>
+                        <li>
+                            <a href=""></a>Lesson 09: <a href="tittle 09"> Lesson 09</a>
+                        </li>
+                        <li>
+                            <a href=""></a>Lesson 10: <a href="tittle 10"> Lessson 10</a>
+                         </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="card-2">
+                <h3>
+                    Information
+                </h3>
+            <br>
+                <p>
+                   Johannesburg, South Africa
+                </p>
+                <span id="temp">🌞 31&deg; - Sunny</span>
+                <p>
+                    Page Visits : 1
+                </p>
+            </section>
+            <section class="card-3">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8395.984473995326!2d27.889514494649795!3d-26.71622311858975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1695834979019!5m2!1sen!2sza"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
     </main>
 
-    <div class="card">
-        <h3>
-            Information
-        </h3>
-        <br>
-        <p>
-            Johannesburg, South Africa
-        </p>
-        <span id="temp">🌞 31&deg; - Sunny</span>
-        <p>
-            Page Visits : 1
-        </p>
-    </div>
+        <footer>
+            <span id="copyright"></span>
+            <p>
+                 🌹 Noluthando Zilimbola-Mothata🌹
+                         South Africa
+            </p>
+            <p>
 
-    <footer>
-        <span id="copyright"></span>
-        <p>
-            🌹 Noluthando Zilimbola-Mothata🌹
-            South Africa
-        </p>
-
-        Last Modified: <span class="last-modified"></span>
-        </p>
-    </footer>
-    <script src="script/getdata.js"></script>
+                Last Modified: <span class="last-modified"></span>
+            </p>
+        </footer>
+        <script src="script/getdata.js"></script>
 
 </body>
 
