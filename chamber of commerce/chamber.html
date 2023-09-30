@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="barra lighthouse chamber website">
+    <link rel="stylesheet" href="script/main.js">
+    <link rel="stylesheet" href="script/windchill.js">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <title>My City Chamber | Home Page</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="./images/logo.png" alt="logo" width="100px" height="100px">
+        <h1>My City</h1>
+        <h2>Chamber of Commerce</h2>
+        <img id="facebook" src="./images/facebook.png" alt="Facebook">
+        <img id="instagram" src="./images/instagram.png" alt="Instagram">
+        <button id="menuButton">&#9776;</button>
+        <nav id="primaryNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="Currentdate"></p>
+    </header>
+
+    <div class="picture">
+        <img src="images/jozi1.jpg" alt="city pic">
+        <div class="middle">
+            <div class="text">Join the Chamber</div>
+        </div>
+    </div>
+    </div>
+
+    <main>
+        <div class="column1">
+            <div class="column-section1">
+                <section class="card">
+                    <h3>
+                        Events
+                        <hr>
+                    </h3>
+                    <h5>
+                        The city of of Johannesburg
+                    </h5>
+                    <p>
+                        Unite with us as we launch the grand opening of my city Chamber
+                        of Commerce, Saturday @ 17h00 p.m.
+                    </p>
+                    <p>
+                        for more info.....
+                    </p>
+                </section>
+                <section class="card">
+                    <h3>
+                        Weather
+                    </h3>
+
+                    <p class="temperature"><span id="current-temp"></span>°C</p>
+
+                    <p id="status"></p>
+
+                    <p id="wind-speed">
+                        Wind Speed: <span class="wind-speed"></span><span> mph</span>
+                    </p>
+                    <p id="wind-chill">Wind Chill: <span class="wind-chill"></span></p>
+                </section>
+            </div>
+        </div>
+
+        <div id="column2">
+            <div class="column-section2">
+                <section class="card-1">
+                    <h3>
+                        Spokie and Daughters
+                    </h3>
+                    <p>
+                        "African Fashion Design's"
+                    </p>
+                    <img src="images/sad.jpg" alt="S&D logo" width="60">
+
+                    <p>+27 73 764 0364</p>
+                    <p><span>https://queen-zm.github.io/wwr/s&d/home.html</span></p>
+                </section>
+                <section class="card-1">
+                    <h3>
+                        Gold Reef City
+                    </h3>
+                    <p><span>"The best Theme park in Africa"</span></p>
+                    <img src="images/gold reef city.jpg" alt="thankful" width="60">
+
+                    <p>+27 11 248 6800</p>
+                    <p><span>https://www.goldreefcity.co.za</span></p>
+                </section>
+                <section class="card-1">
+                    <h3>
+                        Vilakazi Street
+                    </h3>
+                    <p><span>"Come view the only street in the world<br>
+                            that houses two Noble price winners"</span></p>
+                    <img src="images/vilakazi-street.jpg" alt="Logo" width="60">
+                    <p>+27 11 720 5678</p>
+                    <p><span>contact@vilakazistreet.com</span></p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <section class="card-3">
+        <div class="map iframe">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14298.330015458827!2d28.19417805!3d-26.372362300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1695930316389!5m2!1sen!2sza"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+
+    <footer>
+        <img src="images/logo.png" alt="logo" />
+
+        <div class="address">
+            <h4>My City Chamber of Commerce</h4>
+            <p>161 Umjelo Cresent, Gauteng 1475</p>
+        </div>
+        <div class="contact">
+            <p>info@mycity.org.za</p>
+            <p>+27 78 294 3692</p>
+            <p id="map">
+                <a href="https://goo.gl/maps/GtMv76xGJpVJ2jjv5" id="map1">📍 Location Map
+                </a>
+            </p>
+            <p>Weather API by openweathermap.org</p>
+        </div>
+        <hr />
+        <p>
+            ©<span id="year"></span> My City Chamber .:|:. Noluthando Zilimbola-Mothata .:|:. WDD230
+            Project .:|:. Last Updated:
+        <main>
+            <div id="lastModified"></div>
+        </main>
+        </p>
+    </footer>
+
+</body>
+</html>
