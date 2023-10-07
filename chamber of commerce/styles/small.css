@@ -141,7 +141,7 @@ nav ul li {
 
 nav ul li a:hover {
     text-decoration: underline;
-
+    
     color: rgb(213, 244, 16);
 }
 
@@ -174,7 +174,7 @@ main section {
 
 
 footer {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr;
     justify-items: center;
