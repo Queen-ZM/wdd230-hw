@@ -64,7 +64,7 @@ button {
     color: purple;
 }
 
-@media (max-width: 952px){
+@media (max-width: 742px){
     .portal nav ul li a {
         font-size: 16px;
     }
