@@ -3,272 +3,79 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="scripts/getdata.js">
 </head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    body {
-
-        text-align: center;
-        padding-left: 150px;
-        padding-right: 150px;
-
-    }
-
-    header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100px;
-        margin: 0;
-        margin-top: 50px;
-        padding: 4px;
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-        background-color: #009eff;
-    }
-
-    .portal {
-        min-height: 100px;
-        margin: 0;
-        padding: 10px;
-        border: 2px 0;
-        background-color: #b871f2;
-    }
-
-    .wrapper {
-        margin-top: 50px;
-        margin: 15px auto;
-
-    }
-
-    img {
-        max-width: 200px;
-        float: left;
-
-    }
-
-    h1 {
-        margin-bottom: 50px;
-    }
-
-    h3 {
-        background-color: bisque;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-
-
-    }
-
-    nav ul li {
-        margin-bottom: 25px;
-        list-style-type: none;
-        line-height: 20px;
-        font-size: 16px;
-    }
-
-    .card {
-        border-style: dotted;
-        border-width: 1px;
-        border-radius: 10px;
-        padding-bottom: 25px;
-        margin-top: 25px;
-
-    }
-
-    .card-2 {
-        border-style: dotted;
-        border-width: 1px;
-        border-radius: 10px;
-        padding-bottom: 25px;
-        margin-top: 25px;
-    }
-
-    .card-3 {
-        border-width: 1px;
-        border-radius: 10px;
-        padding-bottom: 25px;
-        margin-top: 25px;
-    }
-
-    .map iframe {
-
-    width: 100%;
-
-    height: 400px;
-
-}
-
-    footer {
-        margin: 4px;
-        margin-top: 25px;
-        padding: 4px;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        border: 2px 0;
-        border-radius: 12px;
-        color: aliceblue;
-        background-color: #a3769e;
-    }
-</style>
 
 <body>
+
     <header>
-        <div class="wrapper">
-            <img src="image/Thando.jpg" alt="picture-of-myself">
-
-            <div class="text-box">
-
-                <h1>
-                    Noluthando Zilimbola-Mothata
-                </h1>
-            </div>
-        </div>
+        <img src="image/Thando.jpg" alt="picture-of-myself" width="640" height="360">
+        <h1>Noluthando Zilimbola-Mothata</h1>
     </header>
 
-   
-    <div class="portal">
-        <nav>
-        <button id="menuButton">&#9776;</button>
-        <br>
-        <br>
-            <ul>
-                <li>
-                    <a href=""></a><a href="#">Home</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href=""></a><a href="chamber/siteplan.html">Site Plan</a>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li>
-                    <a href=""></a><a href="chamber/">Chamber</a>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li>
-                    <a href=""></a><a
-                        href="https://www.byupathway.org/applynow?gad=1&gclid=CjwKCAjwpJWoBhA8EiwAHZFzfu1AgKySDKTAe1mv9nw3qad6JycruJ6Pm7VAB00_Rwo0AFIG19j-TRoCnqQQAvD_BwE">BYU-Idaho</a>
-                </li>
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li>
-                    <a href=""></a><a
-                        href="https://www.churchofjesuschrist.org/study/scriptures?lang=eng">Scriptures</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    
-    <br>
-    <br>
-
-    
-        <h2>
-            WDD 230: Web frontend Development
-        </h2>
-        <br>
-        <hr>
+    <nav>
+        <button id="menu" aria-label="Name"></button>
+        <ul class="navigation">
+            <li><a href="index.html" title="Home"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html" title="Site Plan" target="_blank">Site Plan</a></li>
+            <li><a href="chamber/index.html" title="Chamber" target="_blank">Chamber</a></li>
+            <li><a href="https://byui.edu" target="_blank" title="BYU Idaho">BYU Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/9?lang=eng&id=p13-p14#p13"
+                    title="Scripture" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
 
     <main>
+        <h2>WDD 230: Web Frontend Development</h2>
         <div class="column">
-            <section class="card">
-        
-
-                <h3>
-                   Learning Activity
-                </h3>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href=""></a>Lesson 01: <a href="tittle 01">Lesson 01</a>
-                        </li>
-                        <li>
-                            <a href=""></a>Lesson 02: <a href="lesson02/design-principle.html"> Design Principle</a>
-                        </li>
-                        <li>
-                            <a href=""></a>Lesson 03: <a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators4" >W3Schools Exercise</a><br><a href="https://codepen.io/uthando/pen/bGOKqOE">Codepen</a><br><a href="chamber of commerce/chamber.html">Chamber of commerce</a>
-                        </li>
-                        <li>
-                            <a href=""></a>Lesson 04: <a href="chamber of commerce/chamber.html">Chamber</a> <a href="https://codepen.io/uthando/pen/gOZZwvR"> Codepen</a>
-                        </li>
-                        <li>
-                            <a href=""></a>Lesson 05: <a href="https://queen-zm.github.io/wdd230-hw/lesson05/bom.html">Book of Mormon Favourite chapter</a>
-                        </li>
-                        <li>
-                            <a href=""></a>Lesson 06 <a href="tittle 06"> Lesson 06</a>
-                        </li>
-                        <li>
-                            <a href=""></a>Lesson 07: <a href="tittle 07"> Lesson 07</a>
-                        </li>
-                        <li>
-                            <a href=""></a>Lesson 08: <a href="tittle 08"> Lesson 08</a>
-                        </li>
-                        <li>
-                            <a href=""></a>Lesson 09: <a href="tittle 09"> Lesson 09</a>
-                        </li>
-                        <li>
-                            <a href=""></a>Lesson 10: <a href="tittle 10"> Lessson 10</a>
-                         </li>
-                    </ul>
-                </nav>
+            <section class="card wider">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li><a href="lesson01/holygrail.html" target="_blank">Lesson 01 Holygrail</a></li>
+                    <li><a href="lesson02/design-principles.html" target="_blank">Lesson 02 Design Principles</a>|<a
+                            href="lesson01/media-query.html">Media Query</a></li>
+                    <li><a href="https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators4"
+                            target="_blank">Lesson 03 Combinators</a> | <a
+                            href="https://codepen.io/choromba/pen/BavVWMN" target="_blank">CodePen Hamburger-Menu</a>
+                    </li>
+                    <li><a href="#">Lesson 04</a></li>
+                    <li><a href="lesson05/bom.html" target="_blank">Lesson 05: DOM Manipulation</a></li>
+                    <li><a href="#">Lesson 06</a></li>
+                    <li><a href="#">Lesson 07</a></li>
+                    <li><a href="#">Lesson 08</a></li>
+                    <li><a href="#">Lesson 09</a></li>
+                    <li><a href="#">Lesson 10</a></li>
+                    <li><a href="#">Lesson 11</a></li>
+                    <li><a href="#">Lesson 12</a></li>
+                    <li><a href="#">Lesson 13</a></li>
+                    <li><a href="#">Lesson 14</a></li>
+                </ul>
             </section>
-            <section class="card-2">
-                <h3>
-                    Information
-                </h3>
-            <br>
-                <p>
-                   Johannesburg, South Africa
-                </p>
+            <section class="card wider2">
+                <h3>Information</h3>
+                <br>
+                <p>Johannesburg, South Africa</p>
                 <span id="temp">🌞 31&deg; - Sunny</span>
-                <p>
-                    Page Visits : 1
-                </p>
+                <p>Page Visits : 1</p>
             </section>
-            <section class="card-3">
-                <div class="map iframe">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14298.330015458827!2d28.19417805!3d-26.372362300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1695930316389!5m2!1sen!2sza"
-                        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </section>
-            
+            <div class="card wider3 map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8395.984473995326!2d27.889514494649795!3d-26.71622311858975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sza!4v1695834979019!5m2!1sen!2sza"
+                    title="myFrame" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </main>
 
-        <footer>
-            <span id="copyright"></span>
-            <p>
-                 🌹 Noluthando Zilimbola-Mothata🌹
-                         South Africa
-            </p>
-            <p>
-
-                Last Modified: <span class="last-modified"></span>
-            </p>
-        </footer>
-        <script src="script/getdata.js"></script>
-
+    <footer>
+        <div id="footer-sect">
+            <p>&copy;<span id="currentYear"></span> | Name: | South Africa</p>
+            <p class="last-update">Last Modified: <span id="currentDateAndTime"></span></p>
+        </div>
+    </footer>
+    <script src="script/getdata.js"></script>
 </body>
 
 </html>
