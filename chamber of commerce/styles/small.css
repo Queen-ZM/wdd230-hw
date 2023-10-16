@@ -200,3 +200,13 @@ footer img {
     text-decoration: none;
     color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
