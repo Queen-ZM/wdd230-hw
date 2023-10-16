@@ -68,14 +68,6 @@
         text-align: center;
     }
 
-    header #facebook {
-        grid-column: 14 / 15;
-        grid-row: 1 / 3;
-        object-fit: cover;
-        width: 50%;
-        align-self: center;
-        justify-self: end;
-    }
 
     header #instagram {
         grid-column: 15 / 16;
@@ -86,44 +78,10 @@
         justify-self: center;
     }
 
-    header button {
-        display: none;
-        font-family: "Fira Sans", sans-serif;
-    }
 
-    header p {
-        grid-column: 1 / -1;
-        grid-row: 3 / 4;
-        margin: 0.5rem;
-        padding: 0.5rem;
-        background-color: #003a63;
-        text-align: center;
-        color: white;
-        font-family: "Fira Sans", sans-serif;
-        font-style: italic;
-    }
-
-    .picture {
-        max-width: fit-content;
-        display: block;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .text {
-        background-color: plum;
-        color: white;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        border-radius: 5px;
-    }
-
-    .column1 {
-        margin-top: 25px;
-        background-color: #1c98ed;
-        display: flex;
+.hero {
+    display: flex;
+    align-items: center;
         justify-content: center;
         align-items: center;
         padding: 0px 90px;
