@@ -113,23 +113,40 @@ nav {
 }
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    background-image: url("../image/download.jpg"); /*add background image here*/
-    background-size: cover;
-    background-position: center;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0rem;
 }
 
-.hero .text {
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   text-align: left;
-   text-decoration-color: #d92f11;
+.hero picture {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
+.hero img{
+    width: 100%;
+    height: auto;
+}
+
+.herotemple {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    background: rgb(53, 161, 204);
+    border: 1px;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 1.5rem #fff;
+    opacity: 1;
+}
+
+.herotemple p {
+    margin: 0;
+    padding: 0.30rem; 
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*nav styling
