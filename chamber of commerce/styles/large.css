@@ -53,51 +53,53 @@ header {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
-  }
+}
   
-  .main section {
+.main section {
     padding: 1rem;
     background-color: #82c5ee;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
-  }
+}
 
-  
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    background-image: url("../images/jozi1.jpg"); /*add background image here*/
-    background-size: cover;
-    background-position: center;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0rem;
+
 }
-  
-.btn { /* style your button here until where i have put  stars*/
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #000080;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: 'Playfair Display', serif;
-    font-size: large;
-    border-radius: 25px 25px;
+
+.hero picture {
+    display: block;
+    width: 100%;
+    height: auto;
 }
-  
-.btn:hover {
-    background-color: #000;
-    color: whitesmoke;
+
+.hero img{
+    width: 100%;
+    height: auto;
 }
-  
-.btn:active {
-    background-color: #ddd;
-}/***********/
-  
+
+.hero-text {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    background: rgb(53, 161, 204);
+    border: 1px;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 1.5rem #fff;
+    opacity: 1;
+}
+
+.hero-text p {
+    margin: 0;
+    padding: 0.30rem; 
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
 .adverts {
     display: grid;
     grid-template-columns: 1fr;
