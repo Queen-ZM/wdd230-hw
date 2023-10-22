@@ -1,48 +1,21 @@
-const windSpeed = document.querySelector('.wind-speed');
-const currentTemp = document.querySelector('#current-temp');
-const img = document.createElement('img');
-img.setAttribute('id', 'weather-icon');
-const weather = document.querySelector('#weather');
-weather.append(img);
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('#status');
-const windChill = document.querySelector('.wind-chill');
-const cityName = "Johannesburg,za";
-const apiID = "7fae69e9db7f6cc9a7268bfc37203f6b";
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiID}&units=metric`;
-
-async function apiFetch() {
-    try {
-        const response = await fetch(url);
-        if (response.ok) {
-            const data = await response.json();
-            console.log(data);
-            displayResults(data);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
+function calculateWindChill(temperature, windSpeed) {
+    
+    if (temperature <= 50 && windSpeed > 3.0) {
+      
+      const windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
+      
+      return windChill.toFixed(2); 
+    } else {
+      
+      return "N/A";
     }
-}
-
-
-function displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-    const temp = weatherData.main.temp.toFixed(0)
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
-    const speed = weatherData.wind.speed.toFixed(0);
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc.toUpperCase();
-
+  }
+  
+  
+  const currentTemperature = parseFloat(document.getElementById("temperature").textContent);
+  const currentWindSpeed = parseFloat(document.getElementById("windSpeed").textContent);
+  
   const windChill = calculateWindChill(currentTemperature, currentWindSpeed);
   
 
-    } else {
-        na = "N/A";
-        windChill.innerHTML = na;
-    }
-    windSpeed.innerHTML = speed;
-}
+  document.getElementById("windChillValue").textContent = windChill;
