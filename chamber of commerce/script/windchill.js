@@ -25,10 +25,7 @@ async function apiFetch() {
         console.log(error);
     }
 }
-apiFetch(); //Call apiFetch function for the first time.
 
-//Call apiFetch function each 8 seconds.
-const callFuncEachMin = setInterval(apiFetch, 8000);
 
 function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
@@ -40,11 +37,8 @@ function displayResults(weatherData) {
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc.toUpperCase();
 
-    if (temp <= 50 && speed > 3) {
-        const windChillCelsius = 35.74 + (0.6215 * temp) + (0.4275 * temp - 35.75)  *  speed ^ 0.16;
-
-        console.log(windChillCelsius)
-        windChill.innerHTML = windChillCelsius;
+  const windChill = calculateWindChill(currentTemperature, currentWindSpeed);
+  
 
     } else {
         na = "N/A";
