@@ -1,70 +1,3 @@
-main {
-    margin: 0.5rem 0.5rem;
-    text-align: center;
-    font-family: "Fira Sans", sans-serif;
-}
-
-main section {
-    padding: 1rem;
-    margin: 0.75rem 0;
-    background-image: linear-gradient(to left, #0461a3, #71bcf1);
-    height: 200px;
-}
-
-main section article {
-    padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    background-image: linear-gradient(to left, #0461a3, #71bcf1);
-    height: calc(100px - 2rem);
-}
-
-#newsRelease h4 {
-    animation: glow 1s ease-in-out infinite;
-    color: #ffffff;
-    text-align: center;
-    font-size: 1.3rem;
-    margin-top: 0;
-}
-
-#newsRelease {
-    box-shadow: 2px 2px 10px black;
-}
-
-main section#newsRelease p {
-    text-align: center;
-    font-size: 1rem;
-}
-
-/* sidebar css */
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 10px; /* Adjust as needed for spacing */
-}
-
-.left-sidebar, .right-sidebar {
-    text-align: center;
-}
-
-.grid-container {
-    display: grid;
-    gap: 10px; /* Adjust as needed for spacing */
-}
-
-.grid-item {
-    text-align: center;
-    width: 100%;
-    height: 400px;
-}
-
-/* Media query for mobile view */
-@media (max-width: 767px) {
-    .grid-container {
-        grid-template-columns: 1fr; /* Single column layout on mobile */
-    }
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -116,10 +49,6 @@ h1 {
     font-size: x-small;
 }
 
-p {
-    margin-top: 25px;
-}
-
 /*Hamburger menu...........*/
 
 .menu {
@@ -134,7 +63,7 @@ p {
     margin-left: 3rem;
 }
 
-.menu::before {
+#menu::before {
     content: "☰";
 }
 
@@ -183,10 +112,110 @@ nav {
     margin: 1rem auto;
 }
 
-nav ul li a:hover {
-    color: white;
-    background-color: #14213D;
+/*form*/
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #fff;
+    --text-color: #333;
 }
+
+form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    color: var(--text-color);
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+
+main {
+    align-items: center;
+}
+
+
+
+
+
+/* use reverse flexbox to take advantage of flex-direction: reverse */
+.star-rating {
+    display: flex;
+    justify-content: left;
+    width: 160px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 40px auto;
+    position: relative;
+  }
+  /* hide the inputs */
+  .star-rating input {
+    display: none;
+  }
+  /* set properties of all labels */
+  .star-rating > label {
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: orange;
+  }
+  /* give label a hover state */
+  .star-rating label:hover {
+    color: #d42cb8;
+    transition: 0.2s ease;
+  }
+  .star-rating label:active::before {
+    transform:scale(1.1);
+  }
+  
+  /* set shape of unselected label */
+  .star-rating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+  }
+  /* set full star shape for checked label and those that come after it */
+  .star-rating input:checked ~ label:before {
+    content:'\2605';
+  }
+  
+  @-moz-document url-prefix() {
+    .star-rating input:checked ~ label:before {
+    font-size: 36px;
+    line-height: 21px;
+    }
+  }  
+  
 
 
 /*footer*/
@@ -204,6 +233,9 @@ footer {
     font-weight: bold;
     font-size: 12px;
 }
+
+
+
 
 /*640 media query*/
 @media (min-width: 640px) {
@@ -253,28 +285,3 @@ footer {
         margin: 1rem auto;
     }
 }
-
-/*@media (min-width: 768px) {
-    .column {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    h2 {
-        font-size: 30px;
-        text-align: left;
-    }
-
-    h1 {
-        font-size: 30px;
-    }
-
-    img {
-        width: 200px;
-    }
-
-    #footer-sect p {
-        font-size: 20px;
-        font-weight: bold;
-    }
-}*/
-
