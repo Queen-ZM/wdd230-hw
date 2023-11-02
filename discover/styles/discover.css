@@ -47,11 +47,8 @@ main section#newsRelease p {
     text-align: center;
 }
 
-/* styles.css */
-
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Display 3 items in a row */
     gap: 10px; /* Adjust as needed for spacing */
 }
 
