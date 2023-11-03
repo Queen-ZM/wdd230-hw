@@ -5,8 +5,9 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #1c98ed;
-    color: #fff;
-    padding: 10px 20px;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
 }
 
 .logo img {
@@ -83,12 +84,31 @@ header {
     height: auto;
 }
 
-.hero .button {
+.herobutton {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
+    top: 30px;
+    left: 80px;
+    background: rgb(215, 74, 215);
+    border: 1px;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 1.3rem #fff;
+    opacity: 1;
+   
+}
+
+.herobutton a:link, a:visited {
+    background-color:  rgb(215, 74, 215);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #1c98ed;
+    
 }
 
 
