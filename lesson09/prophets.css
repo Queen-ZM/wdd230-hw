@@ -12,16 +12,17 @@ footer {
 }
 
 h1 {
-  color: #000;
-  border-bottom: 1px solid #eee;
-  text-shadow: 0 0 15px #777;
-  width: 60%;
+    text-align: center;
+    color: violet;
+    border-bottom: 1px solid #eee;
+    text-shadow: 0 0 15px #777;
+    width: 60%;
 }
 
 h2 {
-  color: navy;
-  margin: 0 0 1rem 0;
-	 border-bottom: 1px solid #bbb;
+    color: navy;
+    margin: 0 0 1rem 0;
+	border-bottom: 1px solid #bbb;
 }
 
 h3 {
@@ -35,6 +36,9 @@ h4 {
 
 p {
   margin: 0;
+  margin-top: 20px;
+  text-align: center;
+  color: violet;
 }
 
 main {

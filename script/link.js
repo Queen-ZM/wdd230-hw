@@ -47,7 +47,7 @@ async function getLinks() {
       week: "Week 1",
       links: [
         {
-          title: "Lesson 01 Holygrail",
+          title: "Lesson 01: Holygrail",
           url: "lesson01/holygrail.html"
         }
       ]
@@ -56,7 +56,7 @@ async function getLinks() {
       week: "Week 2",
       links: [
         {
-          title: "Lesson 02 Design Principles",
+          title: "Lesson 02: Design Principles",
           url: "lesson02/design-principles.html"
         },
         {
@@ -69,7 +69,7 @@ async function getLinks() {
       week: "Week 3",
       links: [
         {
-            title: "Lesson 03 Combinators",
+            title: "Lesson 03: Combinators",
             url: "https://www.w3schools.com/css/exercise.asp?filename=exercise_combinators4"
         },
         {
@@ -82,7 +82,7 @@ async function getLinks() {
         week: "Week 4",
         links: [
             {
-                title: "Lesson 04 Chamber",
+                title: "Lesson 04: Chamber",
                 url: "chamber of commerce/index.html" 
             }
         ]
@@ -91,7 +91,7 @@ async function getLinks() {
       week: "Week 5",
       links: [
         {
-            title: "Lesson 05 DOM Manipulation",
+            title: "Lesson 05: DOM Manipulation",
             url: "lesson05/bom.html"
         }
       ]  
@@ -101,7 +101,7 @@ async function getLinks() {
       week: "Week 6",
       links: [
         {
-            title: "Lesson 06 Webp ",
+            title: "Lesson 06: Webp ",
             url: "lesson06/index.html"
         },
         {
@@ -114,7 +114,7 @@ async function getLinks() {
       week: "Week 7",
       links: [
         {
-            title: "Lesson 07 Web Storage API",
+            title: "Lesson 07: Web Storage API",
             url: "lesson07/bom.html"
         },
         {
@@ -128,7 +128,7 @@ async function getLinks() {
       week: "Week 8",
       links: [
         {
-            title: "Lesson 08 Table Build",
+            title: "Lesson 08: Table Build",
             url: "lessono8/tablebuild.html"
         },
         {
@@ -142,8 +142,8 @@ async function getLinks() {
         week: "Week 9",
         links: [
           {
-              title: "Lesson 09",
-              url: ""
+              title: "Lesson 09: Prophets",
+              url: "lesson09/prophets.html"
           }
         ]  
     },
