@@ -13,16 +13,8 @@ footer {
 
 h1 {
     text-align: center;
-    color: violet;
-    border-bottom: 1px solid #eee;
     text-shadow: 0 0 15px #777;
     width: 60%;
-}
-
-h2 {
-    color: navy;
-    margin: 0 0 1rem 0;
-	border-bottom: 1px solid #bbb;
 }
 
 h3 {
@@ -98,29 +90,7 @@ footer {
   top: -2.3rem;
   left: -0.25rem;
 }
-
-.caption > div {
-  width: 0.75rem;
-  height: 0.75rem;
-  border: 1px solid #bbb;
-}
-
-.caption > p {
-  font-size: 0.75rem;
-}
-
 .most {
   background-color: #bed;
 }
 
-.fav {
-  background-color: skyblue;
-}
-
-.own {
-  background-color: rosybrown;
-}
-
-.un {
-	list-style: none;
-}
