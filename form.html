@@ -37,8 +37,9 @@
             <input type="password" id="pwd" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                     title="Must match the origional password"
                     placeholder="Match origional password" required></label><br><br>
-            <label for="Email">Email:</label>
-            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-] +@byui\.edu$" placeholder="Please use your 'byui.edu' mail">
+            <label for="emailAddress">Email address</label><br />
+            <input id="emailAddress" type="email" size="64" maxlength="64" required placeholder="Enter your byui.edu email"
+                    pattern=".+@byui\.edu" title="Please provide your byui.edu email address" />
             
             <label for="tempB">Rate this page:</label><br />
             <input type="range" id="tempB" name="temp" list="values" />
@@ -49,6 +50,11 @@
               <option value="3">3</option>
               <option value="4">4</option>
               <option value="4">5</option>
+              <option value="1">6</option>
+              <option value="2">7</option>
+              <option value="3">8</option>
+              <option value="4">9</option>
+              <option value="4">10</option>
             </datalist>
             <input type="submit">
         </form>
