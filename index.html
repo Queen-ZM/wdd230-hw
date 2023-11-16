@@ -69,14 +69,21 @@
             <section class="card wider2">
                 <h3>Information</h3>
                 <br>
-                <p>Johannesburg, South Africa</p>
-                <br>
-                <span id="temp">🌞 31&deg; - Sunny</span>
-                <br>
-                <br>
-                <div id="visit-counter">
-                    Page Visits: <span id="visit-count">0</span>
-                </div>
+                <main>
+                    <p>
+                        The current temperature in Johannesburg, South Africa is <span id="currentTemp"></span>
+                    </p>
+                    <figure>
+                        <img id="weatherIcon"  src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="">
+                        <figcaption id="captionDesc">
+                        </figcaption>
+                    </figure>
+                    <br>
+                    <br>
+                    <div id="visit-counter">
+                        Page Visits: <span id="visit-count">0</span>
+                    </div>
+                </main>
             </section>
             <div class="card wider3 map">
                 <iframe
@@ -95,6 +102,7 @@
     </footer>
     <script src="script/getdata.js"></script>
     <script src="script/link.js"></script>
+    <script src="script/openweatherapi.js"></script>
 </body>
 
 </html>
