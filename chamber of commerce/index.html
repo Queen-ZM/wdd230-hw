@@ -33,6 +33,7 @@
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="#">Contact</a></li>
+
         </ul>
     </nav>
     <div class="social-media"> <!--Instead of using images for your social links, you can you this style and it called font awesome.
@@ -46,6 +47,10 @@
       <div class="bar"></div>
       <div class="bar"></div>
       <div class="bar"></div>
+    </div>
+
+    <div id="mode">
+      🌚
     </div>
       
   </header>
@@ -79,14 +84,26 @@
             Forum week
           </h3>
           <p>
-            Connect with other businesses that are in your City
+            Connect with other businesses that in your City
           </p>
           <a href="#">Register Now</a>
         </section>
         <section>
-          <h2>
+
+          <h1>
             Weather
-          </h2>
+          </h1>
+          <main>
+              <p>
+                  The current temperature in Johannesburg, South Africa is <span id="currentTemp"></span>
+              </p>
+              <figure>
+                <img id="weatherIcon"  src="https://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="">
+                <figcaption id="captionDesc">
+                </figcaption>
+              </figure>
+            </main>
+
             <p>
               Current Temperature: 
               <span id="temperature">30°F</span>
@@ -163,14 +180,14 @@
       </div>
       <hr />
       <p>
-          ©<span id="year"></span> My City Chamber .:|:. Noluthando Zilimbola-Mothata .:|:. WDD230
-          Project .:|:. Last Updated:
-          <main>
-              <div id="lastModified"></div>
-          </main>
+        &copy; <span id="year"></span> .:|:. Noluthando Zilimbola-Mothata .:|:. Last Updated:
+        <span id="lastModified"></span>
       </p>
   </footer>
   <script src="script/main.js"></script>
+  <script src="script/darkmode.js"></script>
+  <script src="script/lastmod.js"></script>
   <script src="script/windchill.js"></script>
+  <script src="script/weatherapi.js"></script>
 </body>
 </html>

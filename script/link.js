@@ -142,7 +142,7 @@ async function getLinks() {
         week: "Week 9",
         links: [
           {
-              title: "Lesson 09: Prophets",
+              title: "Lesson 09: New-ward-members | Prophets",
               url: "lesson09/prophets.html"
           }
         ]  

@@ -35,24 +35,3 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "🕶️";
 	}
 });
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const modeToggle = document.getElementById("modeToggle");
-    const darkModeToggle = document.getElementById("darkModeToggle");
-    const body = document.body;
-
-    modeToggle.addEventListener("click", function () {
-        // Your existing toggle code
-        body.classList.toggle("light-mode");
-        body.classList.toggle("dark-mode");
-    });
-
-    darkModeToggle.addEventListener("change", function () {
-        if (darkModeToggle.checked) {
-            body.classList.add("dark-mode");
-        } else {
-            body.classList.remove("dark-mode");
-        }
-    });
-});
