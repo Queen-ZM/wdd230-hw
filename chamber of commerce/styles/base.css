@@ -188,10 +188,6 @@ main section {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-
-
-
-
 footer {
     display: flex;
     grid-template-columns: 1fr;
