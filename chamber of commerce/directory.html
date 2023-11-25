@@ -47,7 +47,13 @@
     </header>
 
     <main>
-             
+        <div class="toggle-view">
+            <label for="grid-view">Grid View</label>
+            <input type="radio" name="view" id="grid-view" checked>
+            <label for="list-view">List View</label>
+            <input type="radio" name="view" id="list-view">
+          </div>
+          <div id="members-container"></div>
     </main>
 
     
@@ -77,7 +83,8 @@
             </main>
         </p>
     </footer>
-    <script src="directory.html"></script>
+    <script src="script/directory.js"></script>
+    <script src="data/members.json"></script>
   
 </body>
 </html>
