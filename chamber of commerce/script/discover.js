@@ -28,7 +28,11 @@
        // grid.appendChild(gridItem);
    // });
 //});
+let d = new Date();
 
+let newUpdate = document.getElementById('footer-sect');
+newUpdate.querySelector('#currentYear').innerHTML = d.getFullYear();
+newUpdate.querySelector('#currentDateAndTime').innerHTML = document.lastModified;
 
   // Check if this is the user's first visit
   if (!localStorage.getItem('lastVisit')) {

@@ -135,6 +135,23 @@ main {
     margin: 0.5rem 0.5rem;
     text-align: center;
     font-family: "Fira Sans", sans-serif;
+    background-image: linear-gradient(to right top,
+            #ffffff,
+            #c7b6cc,
+            #009eff,
+            #cd94d8,
+            #b672cc,
+            #b871f2,
+            #a938b3,
+            #892e8d,
+            #009eff,
+            #a72aab,
+            #9c22a7,
+            #bf16ce);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 main section {
@@ -170,10 +187,18 @@ main section#newsRelease p {
 
 /* sidebar css */
 
-.container {
+/*.container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 10px; /* Adjust as needed for spacing */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns 
+    gap: 10px;  Adjust as needed for spacing 
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.left-sidebar,
+.right-sidebar {
+    flex: 1;
+    margin-right: 20px;
 }
 
 .left-sidebar, .right-sidebar {
@@ -182,7 +207,7 @@ main section#newsRelease p {
 
 .grid-container {
     display: grid;
-    gap: 10px; /* Adjust as needed for spacing */
+    gap: 10px; /* Adjust as needed for spacing 
 }
 
 .grid-item {
@@ -198,10 +223,10 @@ main section#newsRelease p {
    
 }
 
-/* Media query for mobile view */
+/* Media query for mobile view 
 @media (max-width: 767px) {
     .grid-container {
-        grid-template-columns: 1fr; /* Single column layout on mobile */
+        grid-template-columns: 1fr; /* Single column layout on mobile 
     }
 }
 
@@ -216,7 +241,7 @@ body {
     font-family: 'Lora', serif;
     font-size: 16px;
 
-}
+}*/
 
 /*header styling...........*/
 header {
@@ -239,7 +264,7 @@ footer {
 }
 
 img {
-    width: 70px;
+    width: 100%;
     height: auto;
     margin-right: 5rem;
 
@@ -391,5 +416,43 @@ footer {
 
     .stuff {
         margin: 1rem auto;
+    }
+}
+
+/*css new*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.left-sidebar,
+.right-sidebar {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-item {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px; /* Adjust as needed for spacing*/ 
+}
+
+@media (max-width: 768px) {
+    .left-sidebar,
+    .right-sidebar,
+    .grid-item {
+        width: 100%;
     }
 }
