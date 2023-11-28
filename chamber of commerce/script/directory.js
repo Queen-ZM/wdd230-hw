@@ -1,5 +1,6 @@
 // chamber/scripts/chamber.js
 
+
 document.addEventListener("DOMContentLoaded", function () {
   const membersContainer = document.getElementById("members-container");
   const gridViewToggle = document.getElementById("grid-view");
