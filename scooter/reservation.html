@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/reservation.css">
+  <script src="script/reservation.js" defer></script>
+  <title> Scooter Reservations</title>
+</head>
+<body>
+  <header>
+    <h1>Reserve Your Scooter</h1>
+    <p>Please fill out the form below to secure your reservation.</p>
+  </header>
+
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservation.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="reservation-form">
+    <section class="agreement">
+        <img src="images/smoosat-electric-scooter-for-kids.webp" alt="" width="400px">
+      <h2>Rental Agreement</h2>
+      <p>By submitting this form, you agree to the terms and conditions of Scoots Rentals.</p>
+      <img src="images/145.jpg" alt="" width="400px">
+    </section>
+
+    <form id="reservationForm">
+      <label for="date">Rental Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="period">Rental Period:</label>
+      <select id="period" name="period" required>
+        <option value="half-day">Half Day (3 hrs)</option>
+        <option value="full-day">Full Day</option>
+      </select>
+
+      <label for="rental-type">Rental Type:</label>
+      <select id="rental-type" name="rental-type" required>
+        <option value="option">Input</option>
+        <option value="cash">Cash</option>
+        <option value="credit">Credit</option>
+      </select>
+
+      <label for="number">Number of Persons:</label>
+      <input type="number" id="number" name="number" min="1" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="home-state">Home State or Country:</label>
+      <input type="text" id="home-state" name="home-state" required>
+
+      <label for="cruise-line">Cruise Line (if applicable):</label>
+      <input type="text" id="cruise-line" name="cruise-line">
+
+      <label for="accommodations">Special Accommodations/Comments:</label>
+      <textarea id="accommodations" name="accommodations" rows="4"></textarea>
+
+      <button type="submit">Submit Reservation</button>
+    </form>
+  </main>
+
+  
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/contact.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+  <title>Scoots rental contact-form</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Scoots Rentals</h1>
+    <p>Have questions or want to get in touch? Reach out to us!</p>
+  </header>
+
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservation.html">Reservations</a></li>
+        <li><a href="products.html">Products</a></li>
+    </ul>
+  </nav>
+
+  <section id="contact-info">
+    <h2>Essential Contact Information</h2>
+    <p>Email: info@scootsrentals.com</p>
+    <p>Phone: +52 123 456 789</p>
+    <p>Address: Playa del Carmen-Cozumel Ferry Dock, Cozumel</p>
+    <p>Address: Terminal Puerta Maya, Cozumel</p>
+  </section>
+
+  <section id="google-map">
+    <h2>
+        Our First Location
+    </h2>
+        <div class="card wider3 map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d119551.08604003578!2d-87.09512571166803!3d20.54834947509489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock%2C%20Cozumel!5e0!3m2!1sen!2sza!4v1702462097937!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    <h2>
+        Our Second Location
+    </h2>
+        <div class="card wider3 map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7339178967904!2d-86.97725547483887!3d20.476119031038493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1sen!2sza!4v1702461756998!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>   
+  </section>
+
+  <section id="contact-form">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  
+</body>
+</html>

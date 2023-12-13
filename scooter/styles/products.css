@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+
+}
+.logo{
+    clip-path: circle();
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.header{
+    background: radial-gradient(#968f91, #3498db, #f4bcbc);
+}
+.header .row{
+     margin-top: 70px;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform(-0.5s);
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+title::after{
+    content: "";
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+p{
+    color: rgb(123, 116, 116);
+} 
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    text-align: center;
+}
+.col-2:hover .image {
+    opacity: 0.3;
+}
+.col-2:hover .middle{
+    opacity: 1;
+}
+.text{
+    background-color: #04a;
+    color: whitesmoke;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+p{
+    color: rgb(123, 116, 116);
+}
+.page-btn{
+    margin: 0 auto 80px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background: #ff523b;
+    color: #fff;
+}
+.inner-footer{
+    margin: 0;
+    padding: 0;
+    background-color: #a3769e;
+}
+.social-links{
+    display: flex;
+}
+.social-links ul{
+    display: flex;
+}
+.social-items{
+    list-style: none;
+}
+.social-items a{
+    padding: 10px 20px;
+    font-size: 35px;
+
+}
+.quick-links{
+    display: flex;
+}
+.quick-links ul{
+    display: flex;
+}
+
+.quick-items{
+    list-style: none;
+} 
+.quick-items a{
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 18px;
+    color: #fff;
+} 
+.outer-footer{
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    background-color: #a3769e;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #000000d4;
+    text-align: center;
+    font-family: "Play", sans-serif;
+    color: #ffffff;
+    padding: 0 0.5rem;
+    font-family: "Fira Sans", sans-serif;
+}
+
+footer hr {
+    width: 100%;
+}
+
+footer img {
+    width: 40%;
+    border-radius: 100%;
+}
+
+#map1 {
+    text-decoration: none;
+    color: #fff;
+}
