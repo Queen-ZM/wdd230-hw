@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
   fetch("data/members.json")
     .then(response => response.json())
     .then(data => displayMembers(data.members));
-});
 
 function displayMembers(members) {
   const membersContainer = document.getElementById("members-container");
