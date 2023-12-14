@@ -110,31 +110,20 @@ footer {
     margin-top: 10px;
 }
   
-footer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr;
-    justify-items: center;
-    align-items: center;
-    background-color: #000000d4;
-    text-align: center;
-    font-family: "Play", sans-serif;
-    color: #ffffff;
-    padding: 0 0.5rem;
-    font-family: "Fira Sans", sans-serif;
-}
-
-footer hr {
-    width: 100%;
-}
-
-footer img {
-    width: 40%;
-    border-radius: 100%;
-}
-
-#map1 {
-    text-decoration: none;
-    color: #fff;
-}
+  footer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 3fr 1fr;
+      justify-items: center;
+      align-items: center;
+      background-color: #000000d4;
+      text-align: center;
+      font-family: "Play", sans-serif;
+      color: #ffffff;
+      padding: 0 0.5rem;
+      font-family: "Fira Sans", sans-serif;
+  }
   
+  footer hr {
+      width: 100%;
+  }  
