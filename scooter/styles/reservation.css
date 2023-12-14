@@ -89,15 +89,37 @@ body {
   button:hover {
     background-color: #27ae60;
   }
+
+  .inner-footer{
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    background-color: #968f91;
+  }
+  .social-links{
+      display: flex;
+  }
+  .social-links ul{
+      display: flex;
+  }
+  .social-items{
+      list-style: none;
+  }
+  .social-items a{
+      padding: 10px 20px;
+      font-size: 35px;
   
-  footer {
-    background-color: #34495e;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
   }
   
-  footer {
+.outer-footer{
+  padding: 10px;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  background-color: #a3769e;
+}
+
+footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr;

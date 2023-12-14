@@ -99,16 +99,34 @@ button:hover {
     background-color: #27ae60;
 }
   
-footer {
-    background-color: #34495e;
-    color: #fff;
+.inner-footer{
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    background-color: #968f91;
+  }
+  .social-links{
+      display: flex;
+  }
+  .social-links ul{
+      display: flex;
+  }
+  .social-items{
+      list-style: none;
+  }
+  .social-items a{
+      padding: 10px 20px;
+      font-size: 35px;
+  
+  }
+  
+  .outer-footer{
     padding: 10px;
     text-align: center;
-}
-  
-.social-links {
-    margin-top: 10px;
-}
+    color: black;
+    font-size: 18px;
+    background-color: #a3769e;
+  }
   
   footer {
       display: grid;
@@ -126,4 +144,4 @@ footer {
   
   footer hr {
       width: 100%;
-  }  
+  }

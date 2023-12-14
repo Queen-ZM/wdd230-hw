@@ -41,7 +41,7 @@
 
     <main>
         <section id="hero">
-            <h3>Welcome to Jozi!</h3>
+            <h3>Scoots!</h3>
 
             <img src="images/images (9).jpg" alt="">
 
@@ -52,7 +52,7 @@
             <h4>Contact Us<span class="message1"></span></h4>
             <p>
               Email: info@scootsrentals.com
-              Phone: +52 123 456 789
+              Tel: +52 123 456 789
               Address: Playa del Carmen-Cozumel Ferry Dock, Cozumel
               Address: Terminal Puerta Maya, Cozumel
             </p>
@@ -64,7 +64,7 @@
           </h2>
           
           <!----div id="weather-section"----->
-              <img id="weather-icon" src="#" alt="Weather Icon">
+              <!--img id="weather-icon" src="#" alt="Weather Icon">
               <p><span id="current-temperature">--</span></p>
               <p><span id="current-description">--</span></p>
               <h3>3-Day Forecast:</h3>
@@ -74,9 +74,9 @@
               <!--<p>Current Temperature: <span id="temperature">45°F</span></p>
               <p>Current Wind Speed: <span id="windSpeed">8 mph</span></p>
               <p>Wind Chill Factor: <span id="windChillValue">Calculating...</span></p>-->
-          <!----/div---->
+            <!----/div---->
          
-        </section>
+            <!--/section--->
 
             <!--h3>Weather</h3>
 
@@ -93,12 +93,13 @@
 
 
         </section>
-        <!---section id="joinUs">
-            <button class="join-btn" onclick="window.location.href='join.html';">Join Us!</button>
+        <section id="joinUs">
+            <button class="join-btn" onclick="window.location.href='join.html';">Make a Reservation!</button>
             <p id="joinP">
                 Let Us help you as you grow not only your business even so as you welcome people to your city, thru your establishment.
             </p>
-        </section--->
+        </section>
+
         <section id="newsRelease">
             <h4>Rental Services and Agreements</h4>
             <p>
@@ -115,7 +116,18 @@
             </p>
         </section>
         <section id="spotlight">
-            <article>
+
+            <h2>
+                Weather
+              </h2>
+              
+              <!----div id="weather-section"----->
+                  <img id="weather-icon" src="#" alt="Weather Icon">
+                  <p><span id="current-temperature">--</span></p>
+                  <p><span id="current-description">--</span></p>
+                  
+                  <ul id="forecast-list"></ul>
+            <!--article>
                 Honda Motor Scooters
               <p><span>"Look at what they have and come rent it with us"</span></p>
               <img src="images/Honda.jpg" alt="honda bicks" width="60">
@@ -137,39 +149,39 @@
                 <p><span>"We also have scooters that will make your walks much faster"</span></p>
                 <img src="images/images (13).jpg" alt="Logo" width="60">
                 <p><span>google/scooters</span></p>
-            </article>
+            </article--->
+            </section>
         </section>
     </main>
     <footer>
         <img src="images/scoots.jpg" alt="logo" />
 
         <div class="address">
-            <h4>My City Chamber of Commerce</h4>
-            <p>161 Umjelo Cresent, Gauteng 1475</p>
+            <h4>Scoots Rentals Company</h4>
+            <p></p>
         </div>
         <div class="contact">
-            <p>info@mycity.org.za</p>
-            <p>+27 78 294 3692</p>
+            <p>info@scootsrentals.com</p>
+            <p>Tel:  +52 123 456 789 </p>
             <p id="map">
                 <a href="https://goo.gl/maps/GtMv76xGJpVJ2jjv5" id="map1">📍 Location Map
                 </a>
             </p>
             <p>Weather API by openweathermap.org</p>
         </div>
-        <hr />
-        <p>
-            ©<span id="year"></span> My City Chamber .:|:. Noluthando Zilimbola-Mothata .:|:. WDD230
-            Project .:|:. Last Updated:
-            <main>
-                <div id="lastModified"></div>
-            </main>
-        </p>
-        
+        <hr>
+       
+        <div id="footer-sect">
+            <p>&copy;<span id="currentYear"></span> | Name: Noluthando Zilimbola-Mothata | South Africa</p>
+            <p class="last-update">Last Modified: <span id="currentDateAndTime"></span></p>
+        </div>
     </footer>
+
     <script src="script/base.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="script/weatherapi.js"></script>
+    <script src="script/lastmod.js"></script>
 </body>
 
 </html>
