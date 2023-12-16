@@ -54,3 +54,12 @@ function closeNotification() {
   const notification = document.getElementById('notification');
   notification.style.display = 'none';
 }
+
+ // Hamburger //
+ const hamButton = document.querySelector('#menu');
+ const navigation = document.querySelector('.navigation');
+ 
+ hamButton.addEventListener('click', () => {
+   navigation.classList.toggle('open');
+   hamButton.classList.toggle('open');
+ });

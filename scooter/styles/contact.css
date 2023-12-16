@@ -6,7 +6,7 @@ body {
 }
   
 header {
-    background-color: #968f91;
+    background: radial-gradient(#968f91, #3498db, #f4bcbc);
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -134,7 +134,7 @@ button:hover {
       grid-template-rows: 3fr 1fr;
       justify-items: center;
       align-items: center;
-      background-color: #000000d4;
+      background: radial-gradient(#968f91, #3498db, #f4bcbc);
       text-align: center;
       font-family: "Play", sans-serif;
       color: #ffffff;

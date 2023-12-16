@@ -107,6 +107,26 @@ header nav {
     grid-column: 1 / -1;
 }
 
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, .3);
+    padding: .25rem .75rem;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    margin-left: 3rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
 nav ul {
     display: none;
 }
